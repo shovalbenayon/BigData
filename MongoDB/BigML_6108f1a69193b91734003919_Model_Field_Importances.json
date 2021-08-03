@@ -1,0 +1,30 @@
+{
+  "000005": {
+    "name": "idOfCar",
+    "importance": 0.37318
+  },
+  "000007-1": {
+    "name": "time.minute",
+    "importance": 0.19952
+  },
+  "000002": {
+    "name": "day",
+    "importance": 0.14372
+  },
+  "000007-2": {
+    "name": "time.second",
+    "importance": 0.12612
+  },
+  "000007-0": {
+    "name": "time.hour",
+    "importance": 0.07222
+  },
+  "000006": {
+    "name": "section",
+    "importance": 0.04596
+  },
+  "000003": {
+    "name": "direction",
+    "importance": 0.03928
+  }
+}

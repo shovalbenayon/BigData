@@ -1,0 +1,807 @@
+[{
+    "_id": {
+      "$oid": "610863d71ff37371c1b1f4f6"
+    },
+    "idOfCar": 89212,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 5,
+    "time": "0:29:57",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "610863e01ff37371c1b1f4f7"
+    },
+    "idOfCar": 88948,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 5,
+    "time": "0:30:7",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "610864091ff37371c1b1f4f8"
+    },
+    "idOfCar": 6441,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 5,
+    "time": "0:30:47",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "610864131ff37371c1b1f4f9"
+    },
+    "idOfCar": 34366,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 1,
+    "day": 5,
+    "time": "0:30:57",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "6108641c1ff37371c1b1f4fa"
+    },
+    "idOfCar": 59402,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 5,
+    "time": "0:31:7",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610864261ff37371c1b1f4fb"
+    },
+    "idOfCar": 41505,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 6,
+    "time": "0:31:17",
+    "iSpecialDay": true,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "610864461ff37371c1b1f4fc"
+    },
+    "idOfCar": 99967,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 6,
+    "time": "0:31:47",
+    "iSpecialDay": true,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "610865cdcedab0829a5f13ae"
+    },
+    "idOfCar": 6460,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 1,
+    "time": "0:38:18",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "610865d6cedab0829a5f13af"
+    },
+    "idOfCar": 51123,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 1,
+    "time": "0:38:28",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "6108660973ef979f13d17fd6"
+    },
+    "idOfCar": 63142,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 1,
+    "time": "0:39:18",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "6108661c73ef979f13d17fd7"
+    },
+    "idOfCar": 8866,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 2,
+    "time": "0:39:38",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "61086e4b0285f3d1a7894811"
+    },
+    "idOfCar": 6460,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 1,
+    "time": "0:38:18",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "61087ee2878075be7e6314ea"
+    },
+    "idOfCar": 35625,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 1,
+    "time": "2:25:19",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "61087f09878075be7e6314eb"
+    },
+    "idOfCar": 41355,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 1,
+    "time": "2:25:59",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "61087f4f878075be7e6314ec"
+    },
+    "idOfCar": 33440,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 1,
+    "day": 2,
+    "time": "2:27:9",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "61087f63878075be7e6314ed"
+    },
+    "idOfCar": 56797,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 2,
+    "time": "2:27:29",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "61087f82878075be7e6314ee"
+    },
+    "idOfCar": 85298,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 1,
+    "day": 2,
+    "time": "2:27:59",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "61087fc7878075be7e6314ef"
+    },
+    "idOfCar": 95942,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 3,
+    "time": "2:29:9",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "61087fe6878075be7e6314f0"
+    },
+    "idOfCar": 38685,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 3,
+    "time": "2:29:39",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "61087fef878075be7e6314f1"
+    },
+    "idOfCar": 80789,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:29:49",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "61087ff9878075be7e6314f2"
+    },
+    "idOfCar": 44194,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:29:59",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "61088004878075be7e6314f3"
+    },
+    "idOfCar": 21464,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 4,
+    "time": "2:30:9",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "61088017878075be7e6314f4"
+    },
+    "idOfCar": 51508,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 4,
+    "time": "2:30:29",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "61088053878075be7e6314f5"
+    },
+    "idOfCar": 54915,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 5,
+    "time": "2:31:29",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "6108805d878075be7e6314f6"
+    },
+    "idOfCar": 36937,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 5,
+    "time": "2:31:39",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "6108809a878075be7e6314f7"
+    },
+    "idOfCar": 30298,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 5,
+    "time": "2:32:40",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610880b7878075be7e6314f8"
+    },
+    "idOfCar": 71332,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 6,
+    "time": "2:33:10",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610880c1878075be7e6314f9"
+    },
+    "idOfCar": 15056,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 6,
+    "time": "2:33:20",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610880cc878075be7e6314fa"
+    },
+    "idOfCar": 43367,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 6,
+    "time": "2:33:30",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "610880d6878075be7e6314fb"
+    },
+    "idOfCar": 53903,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 6,
+    "time": "2:33:40",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610880e9878075be7e6314fc"
+    },
+    "idOfCar": 85083,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 6,
+    "time": "2:34:0",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "61088108878075be7e6314fd"
+    },
+    "idOfCar": 40402,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 6,
+    "time": "2:34:30",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "61088112878075be7e6314fe"
+    },
+    "idOfCar": 55001,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 1,
+    "day": 6,
+    "time": "2:34:40",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "6108829c97a6463cc202e433"
+    },
+    "idOfCar": 44216,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 1,
+    "time": "2:41:13",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610882a597a6463cc202e434"
+    },
+    "idOfCar": 51859,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 1,
+    "time": "2:41:23",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "610882af97a6463cc202e435"
+    },
+    "idOfCar": 35815,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 1,
+    "time": "2:41:33",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610885acf6dd1f5fc7e7f217"
+    },
+    "idOfCar": 56969,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 2,
+    "time": "2:54:18",
+    "iSpecialDay": true,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610885caf6dd1f5fc7e7f218"
+    },
+    "idOfCar": 47337,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 2,
+    "time": "2:54:48",
+    "iSpecialDay": true,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610885fc75935567c9d5181f"
+    },
+    "idOfCar": 10882,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 2,
+    "time": "2:55:38",
+    "iSpecialDay": true,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "6108861075935567c9d51820"
+    },
+    "idOfCar": 16393,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 1,
+    "day": 3,
+    "time": "2:55:58",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "6108861a75935567c9d51821"
+    },
+    "idOfCar": 3836,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 3,
+    "time": "2:56:8",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "6108862475935567c9d51822"
+    },
+    "idOfCar": 44267,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 3,
+    "time": "2:56:18",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "6108867475935567c9d51823"
+    },
+    "idOfCar": 10221,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 4,
+    "time": "2:57:38",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "6108867e75935567c9d51824"
+    },
+    "idOfCar": 5817,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:57:48",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "6108868875935567c9d51825"
+    },
+    "idOfCar": 60275,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:57:58",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "6108869275935567c9d51826"
+    },
+    "idOfCar": 28495,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:58:8",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "6108869c75935567c9d51827"
+    },
+    "idOfCar": 59784,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:58:18",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610886a675935567c9d51828"
+    },
+    "idOfCar": 78816,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 4,
+    "time": "2:58:28",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610886cfcddade93ad76a502"
+    },
+    "idOfCar": 53153,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 2,
+    "day": 5,
+    "time": "2:59:8",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610886eccddade93ad76a503"
+    },
+    "idOfCar": 57738,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 5,
+    "time": "2:59:38",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "610886f6cddade93ad76a504"
+    },
+    "idOfCar": 17318,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 5,
+    "time": "2:59:48",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "61088700cddade93ad76a505"
+    },
+    "idOfCar": 94233,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 3,
+    "day": 5,
+    "time": "2:59:58",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "61088714cddade93ad76a506"
+    },
+    "idOfCar": 8262,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 5,
+    "time": "3:0:18",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "6108871ecddade93ad76a507"
+    },
+    "idOfCar": 70172,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 5,
+    "time": "3:0:28",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "61088733cddade93ad76a508"
+    },
+    "idOfCar": 30510,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 6,
+    "time": "3:0:48",
+    "iSpecialDay": false,
+    "FirSection": 2,
+    "section": 2
+  },{
+    "_id": {
+      "$oid": "6108873ccddade93ad76a509"
+    },
+    "idOfCar": 21127,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 6,
+    "time": "3:0:58",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "61088751cddade93ad76a50a"
+    },
+    "idOfCar": 39458,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 6,
+    "time": "3:1:18",
+    "iSpecialDay": false,
+    "FirSection": 5,
+    "section": 5
+  },{
+    "_id": {
+      "$oid": "6108879220455e080d4d94a6"
+    },
+    "idOfCar": 44454,
+    "typeEvent": 1,
+    "direction": 2,
+    "typeCar": 2,
+    "day": 1,
+    "time": "3:2:24",
+    "iSpecialDay": false,
+    "FirSection": 1,
+    "section": 1
+  },{
+    "_id": {
+      "$oid": "610889699e5aea3ecc7df9cd"
+    },
+    "idOfCar": 60691,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 6,
+    "time": "3:10:15",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610889729e5aea3ecc7df9ce"
+    },
+    "idOfCar": 20831,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 6,
+    "time": "3:10:25",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  },{
+    "_id": {
+      "$oid": "6108897c9e5aea3ecc7df9cf"
+    },
+    "idOfCar": 20004,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 1,
+    "day": 6,
+    "time": "3:10:35",
+    "iSpecialDay": false,
+    "FirSection": 4,
+    "section": 4
+  },{
+    "_id": {
+      "$oid": "610889869e5aea3ecc7df9d0"
+    },
+    "idOfCar": 84385,
+    "typeEvent": 1,
+    "direction": 1,
+    "typeCar": 3,
+    "day": 6,
+    "time": "3:10:45",
+    "iSpecialDay": false,
+    "FirSection": 3,
+    "section": 3
+  }]
