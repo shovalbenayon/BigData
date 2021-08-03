@@ -29,4 +29,6 @@ Accuracy will be calculated and represented dynamically.
 
 
 
+![דאטה](https://user-images.githubusercontent.com/45036748/128000471-7cd32aca-def1-44e4-807f-effe4597ec45.PNG)
+
 
