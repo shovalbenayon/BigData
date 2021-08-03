@@ -1,17 +1,15 @@
-
 var Event = require("./Event");
 var mongo=require("./mongoDB");
 const fs = require('fs');
-
 fs.readFile('DataFileFromMongo.json', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
   }
 })
-function bigi(event=new Event.EventObj(2,3,4,2,1,1,'17:45:1',false,4)){
+function functionBigML(event=new Event.EventObj(2,3,5,1,4,1,'07:09:1',false,3)){
   var bigml = require('bigml');
-const LocalModel = require("bigml/lib/LocalModel");
+const LocalModel = require("bigml/lib/LocalModel"); 
 var source = new bigml.Source();
 
 connection = new bigml.BigML('shovalbb14',
@@ -30,19 +28,14 @@ source.create('fileOutput.json', function(error, sourceInfo) {
 
           var localModel = new bigml.LocalModel(modelInfo.resource);
         
-          localModel.predict({"idOfCar": event.idOfCar,
-                "typeEvent": event.typeEvent,
-                 "direction": event.direction,
-                  "typeCar": event.typeCar,
+          localModel.predict({"idOfCar": event.idOfCar, "typeEvent": event.typeEvent,"direction": event.direction,
+                 "typeCar": event.typeCar,
                  "day": event.day,
                  "time": event.time,
                  "iSpecialDay": event.iSpecialDay,
                  "FirSection": event.FirSection,
                  },
-                //  function(error, prediction) {event.setprediction(Math.round(prediction.prediction),
-                //   mongo.update_matrix(event)
-                //   )
-                //     console.log("prediction is" + prediction.prediction);}
+    
                     );
 
 
@@ -52,6 +45,8 @@ source.create('fileOutput.json', function(error, sourceInfo) {
     });
   }
 });
-}bigi()
-exports.bigi=bigi
+
+}
+functionBigML()
+exports.functionBigML=functionBigML
 

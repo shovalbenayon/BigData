@@ -29,10 +29,10 @@ class Simulator{
                 this.RouteOfPrivateCar(newEvent);
             
             case newEvent.getSection.One && newEvent.getDirection.East:
-                this.exit(newEvent);
+                this.exitFromRoad(newEvent);
 
             case newEvent.getSection.Five && newEvent.getDirection.West:
-                    this.exit(newEvent);
+                    this.exitFromRoad(newEvent);
             }
         }
 
@@ -43,7 +43,7 @@ class Simulator{
             setTimeout(() => { this.wayOfCar(event); }, 3000);
         }
         else{
-            this.exit(event);
+            this.exitFromRoad(event);
         }
     }
 
@@ -55,7 +55,7 @@ class Simulator{
                 setTimeout(() => { this.wayOfCar(event); }, 3000);
             }
             else{
-                this.exit(event);
+                this.exitFromRoad(event);
             }
         }
         else{
@@ -65,7 +65,7 @@ class Simulator{
                 setTimeout(() => { this.wayOfCar(event); }, 3000);
             }
             else{
-                this.exit(event);
+                this.exitFromRoad(event);
             }
         }
         
@@ -79,7 +79,7 @@ class Simulator{
             setTimeout(() => { this.wayOfCar(event); }, 3000);
         }
         else{
-            this.exit(event);
+            this.exitFromRoad(event);
         }
     }
 
@@ -92,10 +92,10 @@ class Simulator{
         this.sendEvent(event.toString());
         let section = (event.getDirection() === enums.directions.West)? event.getSection() + 1 : event.getSection() - 1;
         event.setSection(section);
-        event.setTypeEvent(enums.typesOfEvent.SECTION_ENTER);
+        event.setTypeEvent(enums.typesOfEvent.EntSection);
         setTimeout(() => {this.sendEvent(event.toString());}, 100);
     }
-    exit(event){
+    exitFromRoad(event){
         event.setTypeEvent(enums.typesOfEvent.ExSection);
         let today = new Date();
         event.setTime(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());

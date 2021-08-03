@@ -43,8 +43,9 @@ module.exports.subscribe = consumer.on("data", function(m) {
  const obj = JSON.parse(m.value.toString());
  let event = new EventObj.EventObj(Number(obj.idOfCar), Number(obj.typeEvent), Number(obj.section), Number(obj.direction), Number(obj.typeCar), Number(obj.day), obj.time, JSON.parse(obj.iSpecialDay), Number(obj.FirSection));
  console.log("function event")
- mongo.InsertData2Mongo(event)
- 
+ //if(event.typeEvent==EnumObj.typesOfEvent.ExRoad){
+   mongo.InsertData2Mongo(event)
+ //}
 
 consumer.on("disconnected", function(arg) {
   process.exit();
