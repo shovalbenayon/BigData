@@ -28,10 +28,10 @@ class Simulator{
             case newEvent.getTypeCar.Private:
                 this.RouteOfPrivateCar(newEvent);
             
-            case newEvent.getSection.One && newEvent.getDirection.East:
+            case newEvent.getSection.One && newEvent.getDirection.North:
                 this.exitFromRoad(newEvent);
 
-            case newEvent.getSection.Five && newEvent.getDirection.West:
+            case newEvent.getSection.Five && newEvent.getDirection.South:
                     this.exitFromRoad(newEvent);
             }
         }
@@ -90,7 +90,7 @@ class Simulator{
         let today = new Date();
         event.setTime(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
         this.sendEvent(event.toString());
-        let section = (event.getDirection() === enums.directions.West)? event.getSection() + 1 : event.getSection() - 1;
+        let section = (event.getDirection() === enums.directions.South)? event.getSection() + 1 : event.getSection() - 1;
         event.setSection(section);
         event.setTypeEvent(enums.typesOfEvent.EntSection);
         setTimeout(() => {this.sendEvent(event.toString());}, 100);
