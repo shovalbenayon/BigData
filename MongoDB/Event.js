@@ -59,6 +59,10 @@ module.exports.EventObj = class EventObj{
     setTime(time){
         this.time = time;
     }
+    
+    setDay(day){
+        this.day = day;
+    }
 
     toString(){
         return `{"idOfCar":"${this.idOfCar}","typeEvent":"${this.typeEvent}","section":"${this.section}","direction":"${this.direction}","typeCar":"${this.typeCar}","day":"${this.day}","time":"${this.time}","iSpecialDay":"${this.iSpecialDay}","FirSection":"${this.FirSection}"}`;

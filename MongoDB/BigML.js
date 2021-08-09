@@ -1,6 +1,9 @@
 var Event = require("./Event");
 var mongo=require("./mongoDB");
 const fs = require('fs');
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://shoval:sh123456@cluster0.p9ocj.mongodb.net/arieldb?retryWrites=true&w=majority";
+
 fs.readFile('DataFileFromMongo.json', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
@@ -17,7 +20,7 @@ connection = new bigml.BigML('shovalbb14',
                              )
                              var source = new bigml.Source(connection);
 
-source.create('fileOutput.json', function(error, sourceInfo) {
+source.create('DataFileFromMongo.json', function(error, sourceInfo) {
   if (!error && sourceInfo) {
     var dataset = new bigml.Dataset();
     dataset.create(sourceInfo, function(error, datasetInfo) {
@@ -35,8 +38,21 @@ source.create('fileOutput.json', function(error, sourceInfo) {
                  "iSpecialDay": event.iSpecialDay,
                  "FirSection": event.FirSection,
                  },
+                 function(error, prediction) {
+                  MongoClient.connect(uri,  async function(err, db) {
+                    if (err) throw err;
+                    var dbo = db.db("arieldb");
+                  var obj={_id:event.idOfCar,"prediction":Math.round(prediction.prediction)}
+                  dbo.collection("predictions").insertOne(obj, async function(err, res) {
+                    if (err) await sleep(10000)
+                    
+                    console.log("1 document prediction inserted");
+                  
+                    
+                  });
     
-                    );
+                });
+                console.log("prediction is" + prediction.prediction);});
 
 
           }

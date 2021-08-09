@@ -26,3 +26,77 @@ MongoClient.connect(url, function(err, db) {
 });
 }
 exports.InsertData2Mongo=InsertData2Mongo
+
+
+function OutputFile(){
+  
+  const dbName = 'arieldb';
+  const client = new MongoClient(uri, { useUnifiedTopology:true });
+  
+  client.connect(function(err) {
+      //assert.equal(null, err);
+      console.log('Connected successfully to server');
+      const db = client.db(dbName);
+  
+      getDocuments(db, function(docs) {
+      
+          console.log('Closing connection.');
+          client.close();
+          
+          // Write to file
+          try {
+              fs.writeFileSync('OutputFile.json', JSON.stringify(docs));
+              console.log('Done writing to file.');
+          }
+          catch(err) {
+              console.log('Error writing to file', err)
+          }
+      });
+  })
+  
+  const getDocuments = function(db, callback) {
+      const query = { };  // this is your query criteria
+      db.collection("DB")
+        .find(query)
+        .toArray(function(err, result) { 
+            if (err) throw err; 
+            callback(result); 
+      }); 
+  };
+  }
+  exports.OutputFile = OutputFile
+  
+  
+   function update_matrix(event){
+     try{
+      MongoClient.connect(uri, function(err, db) {
+        if (err) throw err;
+        var dbo = db.db("arieldb");
+        dbo.collection("predictions").findOne({_id : event.car_number}, function(err, result) {
+          if(result){
+  
+          
+          console.log("result is" + result.prediction)
+  
+  
+      var index="" + event.section + "-" + result.prediction
+   
+  
+        var myquery = { _id: "1" , "matrix.xy": index };
+        var newvalues = { $inc : { "matrix.$.v" : 1  } };
+       dbo.collection("test3").updateOne(myquery, newvalues, function(err, res) {
+          if (err) throw err;
+          console.log("matrix updated " + index);
+          db.close();
+        });
+      }
+        });
+      });
+    }catch(error){
+        console.log(" error")
+    }
+  
+    }
+    
+    exports.update_matrix=update_matrix
+  

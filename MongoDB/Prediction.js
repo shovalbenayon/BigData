@@ -1,43 +1,194 @@
 /**
-*  Predictor for day from model/61089099e4279b249b003aab
+*  Predictor for typeCar from model/611013ac9193b9173300e88b
 *  Predictive model by BigML - Machine Learning Made Easy
 */
-function predictDay(direction, ispecialday, idofcar, section, typecar, timeMinute, timeHour) {
+function predictTypecar(day, direction, idofcar, section, timeSecond, timeMinute, timeHour) {
     if (timeMinute == null) {
-        return 3.95161;
+        return 2.04839;
     }
-    else if (timeMinute > 36) {
-        if (timeMinute > 55) {
-            if (timeMinute > 58) {
-                return 5;
-            }
-            else if (timeMinute <= 58) {
-                if (timeMinute > 56) {
-                    return 4;
+    else if (timeMinute > 30) {
+        if (idofcar == null) {
+            return 2.27027;
+        }
+        else if (idofcar > 81949) {
+            return 3;
+        }
+        else if (idofcar <= 81949) {
+            if (idofcar > 51491) {
+                if (section == null) {
+                    return 1.84615;
                 }
-                else if (timeMinute <= 56) {
-                    return 3;
+                else if (section > 2) {
+                    if (timeHour == null) {
+                        return 2.14286;
+                    }
+                    else if (timeHour > 1) {
+                        return 2;
+                    }
+                    else if (timeHour <= 1) {
+                        return 3;
+                    }
+                }
+                else if (section <= 2) {
+                    if (day == null) {
+                        return 1.5;
+                    }
+                    else if (day > 5) {
+                        if (section > 1) {
+                            return 1;
+                        }
+                        else if (section <= 1) {
+                            if (timeSecond == null) {
+                                return 2.5;
+                            }
+                            else if (timeSecond > 25) {
+                                return 3;
+                            }
+                            else if (timeSecond <= 25) {
+                                return 2;
+                            }
+                        }
+                    }
+                    else if (day <= 5) {
+                        return 1;
+                    }
+                }
+            }
+            else if (idofcar <= 51491) {
+                if (timeSecond == null) {
+                    return 2.42857;
+                }
+                else if (timeSecond > 53) {
+                    return 1;
+                }
+                else if (timeSecond <= 53) {
+                    if (timeMinute > 36) {
+                        if (idofcar > 44241) {
+                            return 3;
+                        }
+                        else if (idofcar <= 44241) {
+                            if (timeMinute > 38) {
+                                if (direction == null) {
+                                    return 2.44444;
+                                }
+                                else if (direction > 1) {
+                                    if (timeHour == null) {
+                                        return 2.75;
+                                    }
+                                    else if (timeHour > 1) {
+                                        return 3;
+                                    }
+                                    else if (timeHour <= 1) {
+                                        return 2;
+                                    }
+                                }
+                                else if (direction <= 1) {
+                                    if (section == null) {
+                                        return 2.2;
+                                    }
+                                    else if (section > 1) {
+                                        return 2;
+                                    }
+                                    else if (section <= 1) {
+                                        if (timeSecond > 40) {
+                                            return 2;
+                                        }
+                                        else if (timeSecond <= 40) {
+                                            return 3;
+                                        }
+                                    }
+                                }
+                            }
+                            else if (timeMinute <= 38) {
+                                return 3;
+                            }
+                        }
+                    }
+                    else if (timeMinute <= 36) {
+                        if (timeSecond > 18) {
+                            return 2;
+                        }
+                        else if (timeSecond <= 18) {
+                            return 3;
+                        }
+                    }
                 }
             }
         }
-        else if (timeMinute <= 55) {
-            if (timeMinute > 47) {
-                if (ispecialday == null) {
-                    return 2.25;
+    }
+    else if (timeMinute <= 30) {
+        if (section == null) {
+            return 1.72;
+        }
+        else if (section > 3) {
+            if (timeSecond == null) {
+                return 1.2;
+            }
+            else if (timeSecond > 48) {
+                if (idofcar == null) {
+                    return 1.66667;
                 }
-                else if (ispecialday=="false") {
-                    return 3;
-                }
-                else if (ispecialday=="true") {
+                else if (idofcar > 37860) {
                     return 2;
+                }
+                else if (idofcar <= 37860) {
+                    return 1;
                 }
             }
-            else if (timeMinute <= 47) {
+            else if (timeSecond <= 48) {
+                return 1;
+            }
+        }
+        else if (section <= 3) {
+            if (day == null) {
+                return 2.06667;
+            }
+            else if (day > 5) {
+                if (timeSecond == null) {
+                    return 2.75;
+                }
+                else if (timeSecond > 53) {
+                    return 2;
+                }
+                else if (timeSecond <= 53) {
+                    return 3;
+                }
+            }
+            else if (day <= 5) {
                 if (direction == null) {
-                    return 1.125;
+                    return 1.81818;
                 }
                 else if (direction > 1) {
-                    return 2;
+                    if (timeSecond == null) {
+                        return 2.125;
+                    }
+                    else if (timeSecond > 38) {
+                        if (idofcar == null) {
+                            return 1.75;
+                        }
+                        else if (idofcar > 83043) {
+                            return 1;
+                        }
+                        else if (idofcar <= 83043) {
+                            return 2;
+                        }
+                    }
+                    else if (timeSecond <= 38) {
+                        if (timeSecond > 13) {
+                            if (timeHour == null) {
+                                return 2.66667;
+                            }
+                            else if (timeHour > 2) {
+                                return 2;
+                            }
+                            else if (timeHour <= 2) {
+                                return 3;
+                            }
+                        }
+                        else if (timeSecond <= 13) {
+                            return 2;
+                        }
+                    }
                 }
                 else if (direction <= 1) {
                     return 1;
@@ -45,89 +196,6 @@ function predictDay(direction, ispecialday, idofcar, section, typecar, timeMinut
             }
         }
     }
-    else if (timeMinute <= 36) {
-        if (timeMinute > 30) {
-            if (timeMinute > 32) {
-                return 6;
-            }
-            else if (timeMinute <= 32) {
-                if (typecar == null) {
-                    return 5.33333;
-                }
-                else if (typecar > 2) {
-                    return 6;
-                }
-                else if (typecar <= 2) {
-                    return 5;
-                }
-            }
-        }
-        else if (timeMinute <= 30) {
-            if (timeMinute > 17) {
-                if (timeMinute > 28) {
-                    if (timeHour == null) {
-                        return 4.2;
-                    }
-                    else if (timeHour > 1) {
-                        if (section == null) {
-                            return 3.66667;
-                        }
-                        else if (section > 3) {
-                            return 3;
-                        }
-                        else if (section <= 3) {
-                            return 4;
-                        }
-                    }
-                    else if (timeHour <= 1) {
-                        return 5;
-                    }
-                }
-                else if (timeMinute <= 28) {
-                    if (typecar == null) {
-                        return 1.6;
-                    }
-                    else if (typecar > 1) {
-                        return 1;
-                    }
-                    else if (typecar <= 1) {
-                        return 2;
-                    }
-                }
-            }
-            else if (timeMinute <= 17) {
-                if (section == null) {
-                    return 5.3;
-                }
-                else if (section > 1) {
-                    if (idofcar == null) {
-                        return 5.77778;
-                    }
-                    else if (idofcar > 14133) {
-                        if (idofcar > 65431) {
-                            if (typecar == null) {
-                                return 5.5;
-                            }
-                            else if (typecar > 2) {
-                                return 6;
-                            }
-                            else if (typecar <= 2) {
-                                return 5;
-                            }
-                        }
-                        else if (idofcar <= 65431) {
-                            return 6;
-                        }
-                    }
-                    else if (idofcar <= 14133) {
-                        return 5;
-                    }
-                }
-                else if (section <= 1) {
-                    return 1;
-                }
-            }
-        }
-    }
     return null;
 }
+Close

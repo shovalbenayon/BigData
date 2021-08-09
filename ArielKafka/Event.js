@@ -14,7 +14,12 @@ module.exports.EventObj = class EventObj{
         this.FirSection = (FirSection !== -1)? FirSection : this.FirSection;
     }
 
-   
+    getCarNumber(){
+        return this.idOfCar;
+    }
+    getEventKind(){
+        return this.typeEvent;
+    }
 
     getSection(){
         return this.section;
@@ -26,13 +31,6 @@ module.exports.EventObj = class EventObj{
 
     getTypeCar(){
         return this.typeCar;
-    }
-
-    getCarNumber(){
-        return this.idOfCar;
-    }
-    getTypeEvent(){
-        return this.typeEvent;
     }
 
     getDay(){
@@ -51,7 +49,7 @@ module.exports.EventObj = class EventObj{
         return this.FirSection;
     }
 
-    setTypeEvent(typeEvent){
+    setEventKind(typeEvent){
         this.typeEvent = typeEvent;
     }
 
@@ -60,6 +58,10 @@ module.exports.EventObj = class EventObj{
     }
     setTime(time){
         this.time = time;
+    }
+    
+    setDay(day){
+        this.day = day;
     }
 
     toString(){

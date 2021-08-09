@@ -20,9 +20,6 @@ const kafkaConf = {
 
 const prefix = "tnkp9jjg-";
 const topic = `${prefix}default`;
-const producer = new Kafka.Producer(kafkaConf);
-
-const genMessage = m => new Buffer.alloc(m.length,m);
 
 const topics = [topic];
 const consumer = new Kafka.KafkaConsumer(kafkaConf, {
@@ -40,12 +37,29 @@ consumer.on("ready", function(arg) {
 
 module.exports.subscribe = consumer.on("data", function(m) {
 //  console.log( m.value.toString());
- const obj = JSON.parse(m.value.toString());
- let event = new EventObj.EventObj(Number(obj.idOfCar), Number(obj.typeEvent), Number(obj.section), Number(obj.direction), Number(obj.typeCar), Number(obj.day), obj.time, JSON.parse(obj.iSpecialDay), Number(obj.FirSection));
- console.log("function event")
- //if(event.typeEvent==EnumObj.typesOfEvent.ExRoad){
-   mongo.InsertData2Mongo(event)
- //}
+  const obj = JSON.parse(m.value.toString());
+  let event = new EventObj.EventObj(Number(obj.idOfCar), Number(obj.typeEvent), Number(obj.section), Number(obj.direction), Number(obj.typeCar), Number(obj.day), obj.time, JSON.parse(obj.iSpecialDay), Number(obj.FirSection));
+  function check_which_event(event) {
+    if(event.typesOfEvent == EnumObj.typesOfEvent.ExRoad){
+      try{
+        console.log("in if?")
+        mongo.InsertData2Mongo(event)
+        mongo.OutputFile()
+        mongo.update_matrix(event)
+      }
+      catch{
+        console.log("error road exist")
+      }
+    }
+    if(event.typesOfEvent==EnumObj.typesOfEvent.EntRoad){//bigml function predict
+      try{
+        big_ml.bigi(event)
+      }
+      catch{
+        console.log("error road enter")
+      }
+    }
+ }check_which_event(event); 
 
 consumer.on("disconnected", function(arg) {
   process.exit();
